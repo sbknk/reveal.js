@@ -1,0 +1,122 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Oxygen:700,300);
+
+$backgroundColor: #faecd1;
+$codeBackground: rgba(#fcefd5, .7);
+
+// Primary/body text
+$mainFont: 'Oxygen', sans-serif;
+$mainFontSize: 40px;
+$mainColor: #2d2d2d;
+
+// Headings
+$headingMargin: 0 0 30px 0;
+$headingFont: 'Poiret One', cursive;
+$headingColor: $mainColor;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$heading1TextShadow: $headingTextShadow;
+
+// Links and actions
+$linkColor: #b34d74;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #5e6790;
+$selectionColor: #fff;
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+body
+{
+    &:after
+    {
+        content: "";
+        background: url(../../body.jpg);
+        @include transition(opacity, 600ms, ease-in-out);
+        opacity: .3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.intro body
+{
+    &:after
+    {
+        opacity: 1;
+    }
+}
+
+.reveal pre code {
+    background-color: $codeBackground;
+    border-radius: 3px;
+    color: #4d4d4c;
+}
+
+.reveal p code {
+    background-color: $codeBackground;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0 5px;
+    color: #4d4d4c;
+}
+
+.reveal small code {
+    vertical-align: baseline;
+}
+
+.reveal blockquote
+{
+    box-shadow: none;
+    quotes: "\201C""\201D""\2018""\2019";
+    width: 85%;
+
+    &:before
+    {
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+
+    p
+    {
+        display: inline;
+    }
+
+    cite
+    {
+        display: block;
+        margin-top: 18px;
+        text-align: right;
+
+        &:before
+        {
+            content: "– ";
+        }
+    }
+}
