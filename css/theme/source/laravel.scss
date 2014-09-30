@@ -84,7 +84,9 @@ body
     color: #4d4d4c;
 }
 
-.reveal small code {
+.reveal small,
+.reveal code
+{
     vertical-align: baseline;
 }
 
@@ -119,4 +121,27 @@ body
             content: "– ";
         }
     }
+}
+
+.reveal .slides>section,
+.reveal .slides>section>section
+{
+    margin-top: -50px;
+
+    li
+    {
+        line-height: 1.6em;
+    }
+}
+
+.left
+{
+    margin-left: 70px !important;
+    text-align: left;
+}
+
+.gap
+{
+    margin-top: .8em !important;
+    margin-bottom: .8em !important;
 }

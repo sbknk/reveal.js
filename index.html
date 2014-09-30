@@ -47,12 +47,53 @@
                 </section>
 
                 <section data-transition="linear" data-background-transition="slide">
-                    <h2>Fantastic Ordered List</h2>
+                    <h2>Overall benefits</h2>
                     <ol>
-                        <li>One is smaller than...</li>
-                        <li>Two is smaller than...</li>
-                        <li>Three!</li>
+                        <li class="fragment">Easy installation (with Composer)</li>
+                        <li class="fragment">Clean configuration</li>
+                        <li class="fragment">Detailed Documentation &amp; Big Community</li>
+                        <li class="fragment"><strong>Most beautiful Code!</strong></li>
                     </ol>
+                    <p class="fragment left gap">So let's get started...</p>
+                </section>
+
+                <section>
+                    <h2>Routing</h2>
+                    <ol>
+                        <li class="fragment">One Single File</li>
+                        <li class="fragment">Flexible as hell</li>
+                        <li class="fragment">Controllable</li>
+                        <li class="fragment">RESTful Routing made easy</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Facades</h2>
+                    <ol>
+                        <li class="fragment">"Static" interface to classes of IoC Container</li>
+                        <li class="fragment"><small><code>$value = $app->make('cache')->get('key')</code></small><br />becomes<br /><small><code>$value = Cache::get('key')</code></small></li>
+                        <li class="fragment">Easy to remember, better to code</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Samples</h2>
+                    <pre><code>User::firstOrNew(array('name' => 'Aleksey'));
+
+
+if (Input::file('photo')->isValid())
+{
+    Input::file('photo')->move($destination);
+}
+
+
+Mail::send('emails.welcome', function($message)
+{
+    $message->to('s.kenk@intern.nb')
+            ->cc('foo@bar.com')
+            ->attach($pathToFile)
+            ->subject('Enjoy Laravel');
+});</code></pre>
                 </section>
 
                 <section>
@@ -62,99 +103,25 @@
                     </blockquote>
                 </section>
 
-                <section id="themes">
-                    <h2>Themes</h2>
-                    <p>
-                        Reveal.js comes with a few themes built in: <br>
-                        <a href="?#/themes">Default</a> -
-                        <a href="?theme=sky#/themes">Sky</a> -
-                        <a href="?theme=beige#/themes">Beige</a> -
-                        <a href="?theme=simple#/themes">Simple</a> -
-                        <a href="?theme=serif#/themes">Serif</a> -
-                        <a href="?theme=night#/themes">Night</a> <br>
-                        <a href="?theme=moon#/themes">Moon</a> -
-                        <a href="?theme=solarized#/themes">Solarized</a>
-                    </p>
-                    <p>
-                        <small>
-                            * Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-                        </small>
-                    </p>
+                <section>
+                    <h2>Eloquent</h2>
+                    <ol>
+                        <li></li>
+                    </ol>
                 </section>
 
                 <section>
-                    <h2>Global State</h2>
-                    <p>
-                        Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-                        will be added as a class to the document element when the slide is open. This lets you
-                        apply broader style changes, like switching the background.
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Custom Events</h2>
-                    <p>
-                        Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-                    </p>
-                </section>
-
-                <section>
-                    <h2>Pretty Code</h2>
-                    <pre><code data-trim>
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  body:first-of-type pre::after {
-    content: 'highlight: ' attr(class);
-  }
-}
-
-@import url('print.css');
-@page:right {
- margin: 1cm 2cm 1.3cm 4cm;
-}
-
-@font-face {
-  font-family: Chunkfive; src: url('Chunkfive.otf');
-}
-
-div.text,
-#content,
-li[lang=ru] {
-  font: Tahoma, Chunkfive, sans-serif;
-  background: url('hatch.png') /* wtf? */;  color: #F0F0F0 !important;
-  width: 100%;
-}
-                    </code></pre>
-                    <p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-                </section>
-
-                <section>
-                    <section id="fragments">
-                        <h2>Fragmented Views</h2>
-                        <p>Hit the next arrow...</p>
-                        <p class="fragment">... to step through ...</p>
-                        <ol>
-                            <li class="fragment"><code>any type</code></li>
-                            <li class="fragment"><em>of view</em></li>
-                            <li class="fragment"><strong>fragments</strong></li>
-                        </ol>
-
-                        <aside class="notes">
-                            This slide has fragments which are also stepped through in the notes window.
-                        </aside>
-                    </section>
-                    <section>
-                        <h2>Fragment Styles</h2>
-                        <p>There's a few styles of fragments, like:</p>
-                        <p>Lorem ipsum et dolor <span class="fragment grow">grow</span> wow, this is stunning!</p>
-                        <p class="fragment shrink">shrink</p>
-                        <p class="fragment roll-in">roll-in</p>
-                        <p class="fragment fade-out">fade-out</p>
-                        <p class="fragment highlight-red">highlight-red</p>
-                        <p class="fragment highlight-green">highlight-green</p>
-                        <p class="fragment highlight-blue">highlight-blue</p>
-                        <p class="fragment current-visible">current-visible</p>
-                        <p class="fragment highlight-current-blue">highlight-current-blue</p>
-                    </section>
+                    <h2>More Goddies</h2>
+                    <ol>
+                        <li class="fragment">Built-in Auth &amp; User Handling</li>
+                        <li class="fragment">Validators, Validators, Validators</li>
+                        <li class="fragment">Custom Commands in minutes</li>
+                        <li class="fragment"><pre><code>SSH::into('staging')->define('deploy', array(
+    'cd /var/www',
+    'git pull origin master',
+    'php artisan migrate',
+));</code></pre></li>
+                    </ol>
                 </section>
 
                 <section data-state="intro" >

@@ -166,7 +166,8 @@ body:after {
   padding: 0 5px;
   color: #4d4d4c; }
 
-.reveal small code {
+.reveal small,
+.reveal code {
   vertical-align: baseline; }
 
 .reveal blockquote {
@@ -187,3 +188,18 @@ body:after {
     text-align: right; }
     .reveal blockquote cite:before {
       content: "– "; }
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  margin-top: -50px; }
+  .reveal .slides > section li,
+  .reveal .slides > section > section li {
+    line-height: 1.6em; }
+
+.left {
+  margin-left: 70px !important;
+  text-align: left; }
+
+.gap {
+  margin-top: .8em !important;
+  margin-bottom: .8em !important; }
