@@ -68,6 +68,15 @@
                 </section>
 
                 <section>
+                    <h2>Command Line Interface (CLI)</h2>
+                    <ol>
+                        <li class="fragment"><code>php artisan</code></li>
+                        <li class="fragment">Gives you full control</li>
+                        <li class="fragment">Extendable</li>
+                    </ol>
+                </section>
+
+                <section>
                     <h2>Facades</h2>
                     <ol>
                         <li class="fragment">"Static" interface to classes of IoC Container</li>
@@ -116,11 +125,7 @@ Mail::send('emails.welcome', function($message)
                         <li class="fragment">Built-in Auth &amp; User Handling</li>
                         <li class="fragment">Validators, Validators, Validators</li>
                         <li class="fragment">Custom Commands in minutes</li>
-                        <li class="fragment"><pre><code>SSH::into('staging')->define('deploy', array(
-    'cd /var/www',
-    'git pull origin master',
-    'php artisan migrate',
-));</code></pre></li>
+                        <li class="fragment">External Modules</li>
                     </ol>
                 </section>
 
